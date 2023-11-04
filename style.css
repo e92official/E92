@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wallet {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#balance {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+}
