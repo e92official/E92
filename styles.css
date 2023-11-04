@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Fallback to sans-serif if Roboto is not available */
+    background-color: #121d26; /* Dark blue background for contrast */
+    color: #ffffff; /* White text for better readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.innerWallet {
+    background-color: #25313c; /* Even lighter blue for internal contrast */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    background-color: #f7931a; /* Bitcoin orange for brand consistency */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #f7931a; /* Bitcoin orange for the main title */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e6e6e6; /* Light grey for subheadings */
+}
+
+#actions {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.tab-link:hover, .tab-link.active {
+    background-color: #f7931a;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e2a35;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    max-height: 350px;
+    margin: 20px 0;
+}
+
+#currency-select {
+    padding: 5px;
+    margin-left: 10px;
+}
