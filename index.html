@@ -16,7 +16,30 @@
                 <h2 class="text-xl font-semibold mb-4">Live Bitcoin Preis</h2>
                 <div id="btcPrice" class="text-2xl">Lade...</div>
             </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <!-- Live Handelsdaten Panel -->
+  <div class="bg-gray-700 p-5 rounded-lg shadow-md">
+    <h2 class="text-xl font-semibold mb-4">Live Bitcoin Preis</h2>
+    <div>Last Price: <span id="lastPrice">Lade...</span></div>
+    <div>Last Trade Quantity: <span id="lastTradeQty">Lade...</span></div>
+  </div>
 
+  <!-- Kerzenchart Daten -->
+  <div class="bg-gray-700 p-5 rounded-lg shadow-md">
+    <h2 class="text-xl font-semibold mb-4">Kerzenchart Daten (1 Min)</h2>
+    <div>Open: <span id="openPrice">Lade...</span></div>
+    <div>High: <span id="highPrice">Lade...</span></div>
+    <div>Low: <span id="lowPrice">Lade...</span></div>
+    <div>Close: <span id="closePrice">Lade...</span></div>
+  </div>
+
+  <!-- Orderbuch Daten -->
+  <div class="bg-gray-700 p-5 rounded-lg shadow-md">
+    <h2 class="text-xl font-semibold mb-4">Orderbuch</h2>
+    <div>Bid Price: <span id="bidPrice">Lade...</span></div>
+    <div>Ask Price: <span id="askPrice">Lade...</span></div>
+  </div>
+</div>
             <!-- Weitere Panels -->
             <div class="bg-gray-700 p-5 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-4">Weitere Daten</h2>
