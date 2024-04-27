@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Lightning Wallet</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.7/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Bitcoin Lightning Wallet</h1>
-        <div class="tabs">
-            <button id="defaultOpen" class="tab-link" onclick="openTab(event, 'wallet')">View</button>
-            <button class="tab-link" onclick="openTab(event, 'send')">Send</button>
-            <button class="tab-link" onclick="openTab(event, 'receive')">Receive</button>
-        </div>
-        <div id="wallet" class="tab-content">
-            <div class="innerWallet">
-                <h2>Balance:</h2>
-                <span id="balanceAmount">0</span>
-                <select id="currency-select">
-                    <option value="sats">Sats</option>
-                    <option value="btc">BTC</option>
-                    <option value="usd">USD</option>
-                </select>
-                <div><button id="refreshBalance">Refresh Balance</button></div>
+<body class="bg-gray-800 text-white font-sans">
+    <div class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold mb-6">Bitcoin Dashboard</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Live Daten Panel -->
+            <div class="bg-gray-700 p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Live Bitcoin Preis</h2>
+                <div id="btcPrice" class="text-2xl">Lade...</div>
             </div>
-        </div>
-        <div id="send" class="tab-content">
-            <div class="innerWallet">
-            <h2>Send Bitcoin</h2>
-            <button id="sendPayment">Send Payment</button>
+
+            <!-- Weitere Panels -->
+            <div class="bg-gray-700 p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Weitere Daten</h2>
+                <p>Weitere wichtige Informationen können hier angezeigt werden.</p>
             </div>
-        </div>
-        <div id="receive" class="tab-content">
-            <div class="innerWallet">
-            <h2>Receive Bitcoin</h2>
-            <button id="receivePayment">Receive Payment</button>
         </div>
     </div>
-    <script src="scripts.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
